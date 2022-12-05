@@ -17,7 +17,7 @@ const gallery = document.querySelector(".gallery");
 
 images.forEach((image) => {
   const newLi = document.createElement("li");
-  newLi.insertAdjacentHTML("afterbegin", '<img src="" alt=""> </img>');
+  newLi.insertAdjacentHTML("afterbegin", '<img src="" alt=""> </img>'); // or use img.setAttribute('src', image.url) and img.setAttribute('alt', image.alt) instead of putting the attributes inside the img tag
   const img = newLi.querySelector("img");
   img.src = image.url;
   img.alt = image.alt;
