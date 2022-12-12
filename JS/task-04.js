@@ -10,9 +10,7 @@ const counterIncrement = () => {
 };
 
 const counterDecrement = () => {
-  if (counterValue > 0) {
-    counterValue--;
-  }
+  counterValue--;
   value.textContent = counterValue;
 };
 
